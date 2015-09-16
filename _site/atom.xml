@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Introduction to Computing</title>
+ <link href="http://mikheyevlab.github.io/Computing-Fall-2015/atom.xml" rel="self"/>
+ <link href="http://mikheyevlab.github.io/Computing-Fall-2015/"/>
+ <updated>2015-09-16T13:22:07+09:00</updated>
+ <id>http://mikheyevlab.github.io/Computing-Fall-2015</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>1. Welcome to Computing</title>
+   <link href="http://mikheyevlab.github.io/Computing-Fall-2015/2015/09/16/1-welcome-to-computing/"/>
+   <updated>2015-09-16T00:00:00+09:00</updated>
+   <id>http://mikheyevlab.github.io/Computing-Fall-2015/2015/09/16/1-welcome-to-computing</id>
+   <content type="html">&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
+
+&lt;h2 id=&quot;installing-a-linux-virtual-machine-vm&quot;&gt;Installing a Linux Virtual Machine (VM)&lt;/h2&gt;
+
+&lt;p&gt;If you have Linux running on your laptop you don’t need to follow this step. You are already a pro. Otherwise follow &lt;a href=&quot;http://www.wikihow.com/Install-Ubuntu-on-VirtualBox&quot;&gt;these instructions&lt;/a&gt;. They are for Windows, but should work analagously on the Mac.&lt;/p&gt;
+
+&lt;h2 id=&quot;navigating-the-command-line&quot;&gt;Navigating the command line&lt;/h2&gt;
+
+&lt;h2 id=&quot;install-python&quot;&gt;Install python&lt;/h2&gt;
+
+&lt;h2 id=&quot;installing-software-from-source&quot;&gt;Installing software from source&lt;/h2&gt;
+
+&lt;h1 id=&quot;homework&quot;&gt;Homework&lt;/h1&gt;
+
+&lt;p&gt;These are exercises to be finished by next week’s class.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

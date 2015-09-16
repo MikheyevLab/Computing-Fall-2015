@@ -1,0 +1,23 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Introduction to Computing
+tagline:             Fall 2015
+url:                 http://mikheyevlab.github.io/Computing-Fall-2015
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+pages_list:
+  Syllabus: '/syllabus'
+ 
