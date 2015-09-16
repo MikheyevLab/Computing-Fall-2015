@@ -13,7 +13,7 @@
         <small>{{ site.tagline }}</small>
         {% for page in site.pages_list %}
           &nbsp;&nbsp;&nbsp;
-          <small><a href="{{ site.baseurl }}{{ page[1]  }}">{{ page[0] }}</a></small>
+          <small><a href="{{ page[1] | prepend: site.baseurl }}">{{ page[0] }}</a></small>
         {% endfor %}
 
       </h3>

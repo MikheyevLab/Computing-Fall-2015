@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Introduction to Computing</title>
- <link href="http://mikheyevlab.github.io/Computing-Fall-2015/atom.xml" rel="self"/>
- <link href="http://mikheyevlab.github.io/Computing-Fall-2015/"/>
- <updated>2015-09-16T13:39:59+09:00</updated>
+ <link href="http://mikheyevlab.github.io/Computing-Fall-2015/Computing-Fall-2015/atom.xml" rel="self"/>
+ <link href="http://mikheyevlab.github.io/Computing-Fall-2015/Computing-Fall-2015/"/>
+ <updated>2015-09-16T13:42:04+09:00</updated>
  <id>http://mikheyevlab.github.io/Computing-Fall-2015</id>
  <author>
    <name></name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>1. Welcome to Computing</title>
-   <link href="http://mikheyevlab.github.io/Computing-Fall-2015/2015/09/16/1-welcome-to-computing/"/>
+   <link href="http://mikheyevlab.github.io/Computing-Fall-2015/Computing-Fall-2015/2015/09/16/1-welcome-to-computing/"/>
    <updated>2015-09-16T00:00:00+09:00</updated>
    <id>http://mikheyevlab.github.io/Computing-Fall-2015/2015/09/16/1-welcome-to-computing</id>
    <content type="html">&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
