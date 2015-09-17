@@ -39,7 +39,7 @@ You can then use ```pip```, which comes with Python to [install IPython](http://
 
 # Homework
 
-These are exercises to be finished by next week's class. (for Valentin to complete)
+These are exercises to be finished by next week's class.
 
 1. These are the most important linux commands you should know for sure. Describe what each one does in your own words
   - ```ls```
@@ -49,7 +49,15 @@ These are exercises to be finished by next week's class. (for Valentin to comple
   - ```rm```
   - ```ln```
   - ```cat```
+  - ```man```
   - ```less```
 2. Which shortcuts refer to (a) the current directory (b) to the directory above the current one (c) the home folder?
 3. What is the difference between a folder and a directory?
 4. How do you remove an empty directory? What if it is not empty? Give examples.
+5. How would you find out more about a command? (List three options)
+6. What are links? How might they be useful?
+7. How would you differentiate a directory from an ordinary file on the command line. How about a link?
+8. Create two directories (let's call them A and B). Go into A and create a (soft-)link to B. Go into that link. Where are you know? Go back to the original directory and delete B. What happend to the link in A? 
+9. Can you describe the difference between a hard-link and a soft-link? Compare your result from 8. with creating a hard-link to a normal file and deleting the original.
+10. Execute the command ```dmesg```. How would you see only the last 50 lines. How about the first 50 lines? How would you save the output as a file? How would you search the output for a keyword? Since the command is creating a lot of output is there a way to read the output at your own pace?
+11. Why do you think using the command line might be useful? What surprised you?
