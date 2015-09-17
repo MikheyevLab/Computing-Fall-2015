@@ -16,11 +16,13 @@ You can then make your way to the [command line](https://help.ubuntu.com/communi
 
 ## Navigating the command line
 Here are a number of useful links:
+
 - This [tutorial from the University of Surrey](http://www.ee.surrey.ac.uk/Teaching/Unix/) is a good introduction. Read up to chapter 4, and leave the rest for later.
 - [An Introduction to Linux Virtual Workshop](https://cvw.cac.cornell.edu/Linux/default). This tutorial is slightly more advanced, and has a good introduction to file permissions and redirection.
 
 ### More advanced tutorials
 These might be overkill to start with, but we list them here as references you may want to check out later.
+
 - [LinuxCommand.org](http://linuxcommand.org/lc3_learning_the_shell.php). Very comprehensive into, though perhaps a bit dense.
 - [A Practical Guide to Linux Commands Editors and Shell Programming]([http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf](http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf)
 - ). This is an actual book, covering a lot of different topics.
