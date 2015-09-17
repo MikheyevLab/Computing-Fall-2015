@@ -8,6 +8,7 @@ published: true
 ---
 
 # Resources
+
 ## Installing a Linux Virtual Machine (VM)
 If you have Linux running on your laptop you don't need to follow this step. You are already a pro. Otherwise follow [these instructions](http://www.wikihow.com/Install-Ubuntu-on-VirtualBox). They are for Windows, but should work similarly on the Mac.
 
@@ -33,7 +34,7 @@ There are Ubuntu-specific instructions provided in [this form answer](http://ask
 You can then use `pip`, which comes with Python to [install IPython](http://ipython.org/install.html), an interactive environment you can use for playing around (`pip install "ipython[notebook]"`). You can then play around with the awesome [ipython notebook computational environment](http://ipython.org/notebook.html). We also have a [public server](http://ipython.oist.jp:8888). Don't keep any files on the public server though, it will periodically be purged.
 
 # Homework
-- These are exercises to be finished by next week's class. Please submit homework to Valentin as a pdf, using proper English, and proper formatting of code blocks. You are encouraged to write your responses in [Markdown](http://daringfireball.net/projects/markdown/syntax) a mini-language that allows for easy conversion of plain text to HTML with proper code highlighting. It is super-useful (the content of this site is written in Markdown). For writing in Markdown (and also for general programming) we recommend the excellent [Atom](https://atom.io) editor, which has installable packages that can convert Markdown to a variety of other formats, such such pdf (_e.g._, markdown-pdf, which is installable via Preferences -> Install). Of course, there are numerous other tools.
+1. These are exercises to be finished by next week's class. Please submit homework to Valentin as a pdf, using proper English, and proper formatting of code blocks. You are encouraged to write your responses in [Markdown](http://daringfireball.net/projects/markdown/syntax) a mini-language that allows for easy conversion of plain text to HTML with proper code highlighting. It is super-useful (the content of this site is written in Markdown). For writing in Markdown (and also for general programming) we recommend the excellent [Atom](https://atom.io) editor, which has installable packages that can convert Markdown to a variety of other formats, such such pdf (_e.g._, markdown-pdf, which is installable via Preferences -> Install). Of course, there are numerous other tools.
   - These are the most important linux commands you should know for sure. Describe what each one does in your own words
   - `ls`
   - `cd`
@@ -45,7 +46,7 @@ You can then use `pip`, which comes with Python to [install IPython](http://ipyt
   - `man`
   - `less`
 
-- Which shortcuts refer to (a) the current directory (b) to the directory above the current one (c) the home folder?
+1. Which shortcuts refer to (a) the current directory (b) to the directory above the current one (c) the home folder?
 1. What is the difference between a folder and a directory?
 2. How do you remove an empty directory? What if it is not empty? Give examples.
 3. How would you find out more about a command? (List three options)
