@@ -58,17 +58,51 @@
 
 <h2 id="installing-a-linux-virtual-machine-vm">Installing a Linux Virtual Machine (VM)</h2>
 
-<p>If you have Linux running on your laptop you don’t need to follow this step. You are already a pro. Otherwise follow <a href="http://www.wikihow.com/Install-Ubuntu-on-VirtualBox">these instructions</a>. They are for Windows, but should work analagously on the Mac.</p>
+<p>If you have Linux running on your laptop you don’t need to follow this step. You are already a pro. Otherwise follow <a href="http://www.wikihow.com/Install-Ubuntu-on-VirtualBox">these instructions</a>. They are for Windows, but should work similarly on the Mac.</p>
+
+<p>You can then make your way to the <a href="https://help.ubuntu.com/community/UsingTheTerminal">command line</a>, where the real fun begins.</p>
 
 <h2 id="navigating-the-command-line">Navigating the command line</h2>
 
+<p>Here are a number of useful links:
+- This <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/">tutorial from the University of Surrey</a> is a good introduction. Read up to chapter 4, and leave the rest for later.
+- <a href="https://cvw.cac.cornell.edu/Linux/default">An Introduction to Linux Virtual Workshop</a>. This tutorial is slightly</p>
+
+<h3 id="more-advanced-tutorials">More advanced tutorials</h3>
+<p>These might be overkill to start with, but we list them here as references you may want to check out later.
+- <a href="http://linuxcommand.org/lc3_learning_the_shell.php">LinuxCommand.org</a>. Very comprehensive into, though perhaps a bit dense.
+- <a href="http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf">A Practical Guide to Linux Commands Editors and Shell Programming</a>. This is an actual book, covering a lot of different topics.
+- <a href="http://www.pehjota.net/guides/shell-workshop/">Shell workshop</a> A series of slides and code examples for how to use the shell. Perhaps a bit dry, but very useful.
+- <a href="https://www.digitalocean.com/community/tutorials/basic-linux-navigation-and-file-management">Basic Linux Navigation and File Management</a>. More general and basic
+- <a href="http://www.physics.smu.edu/coan/linux/index.html">Linux Driver’s Ed</a> <strong>Goal:</strong> To transform an intelligent, motivated person with zero linux experience into a capable linux user without inducing tears, drawing blood or triggering frustration-fueled outbursts of profanity.</p>
+
 <h2 id="install-python">Install python</h2>
 
-<h2 id="installing-software-from-source">Installing software from source</h2>
+<p>There are Ubuntu-specific instructions provided in <a href="http://askubuntu.com/questions/244544/how-do-i-install-python-3-3">this form answer</a>. You will get a lot of your most useful information from forum answers like this one. Follow these instructions up to <code>make &amp;&amp; sudo make install</code></p>
+
+<p>You can then use <code>pip</code>, which comes with Python to <a href="http://ipython.org/install.html">install IPython</a>, an interactive environment you can use for playing around (<code>pip install "ipython[notebook]"</code>). You can then play around with the awesome <a href="http://ipython.org/notebook.html">ipython notebook computational environment</a>. We also have a <a href="http://ipython.oist.jp:8888">public server</a>. Don’t keep any files on the public server though, it will periodically be purged.</p>
 
 <h1 id="homework">Homework</h1>
 
-<p>These are exercises to be finished by next week’s class.</p>
+<p>These are exercises to be finished by next week’s class. (for Valentin to complete)</p>
+
+<ol>
+  <li>These are the most important linux commands you should know for sure. Describe what each one does in your own words
+    <ul>
+      <li><code>ls</code></li>
+      <li><code>cd</code></li>
+      <li><code>mkdir</code></li>
+      <li><code>cp</code></li>
+      <li><code>rm</code></li>
+      <li><code>ln</code></li>
+      <li><code>cat</code></li>
+      <li><code>less</code></li>
+    </ul>
+  </li>
+  <li>Which shortcuts refer to (a) the current directory (b) to the directory above the current one (c) the home folder?</li>
+  <li>What is the difference between a folder and a directory?</li>
+  <li>How do you remove an empty directory? What if it is not empty? Give examples.</li>
+</ol>
 
   </article>
   
@@ -87,7 +121,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-09-16T13:42:04+09:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-09-17T15:43:07+09:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>

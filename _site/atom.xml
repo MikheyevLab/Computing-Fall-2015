@@ -4,7 +4,7 @@
  <title>Introduction to Computing</title>
  <link href="http://mikheyevlab.github.io/Computing-Fall-2015/Computing-Fall-2015/atom.xml" rel="self"/>
  <link href="http://mikheyevlab.github.io/Computing-Fall-2015/Computing-Fall-2015/"/>
- <updated>2015-09-16T13:42:04+09:00</updated>
+ <updated>2015-09-17T15:43:07+09:00</updated>
  <id>http://mikheyevlab.github.io/Computing-Fall-2015</id>
  <author>
    <name></name>
@@ -21,17 +21,51 @@
 
 &lt;h2 id=&quot;installing-a-linux-virtual-machine-vm&quot;&gt;Installing a Linux Virtual Machine (VM)&lt;/h2&gt;
 
-&lt;p&gt;If you have Linux running on your laptop you don’t need to follow this step. You are already a pro. Otherwise follow &lt;a href=&quot;http://www.wikihow.com/Install-Ubuntu-on-VirtualBox&quot;&gt;these instructions&lt;/a&gt;. They are for Windows, but should work analagously on the Mac.&lt;/p&gt;
+&lt;p&gt;If you have Linux running on your laptop you don’t need to follow this step. You are already a pro. Otherwise follow &lt;a href=&quot;http://www.wikihow.com/Install-Ubuntu-on-VirtualBox&quot;&gt;these instructions&lt;/a&gt;. They are for Windows, but should work similarly on the Mac.&lt;/p&gt;
+
+&lt;p&gt;You can then make your way to the &lt;a href=&quot;https://help.ubuntu.com/community/UsingTheTerminal&quot;&gt;command line&lt;/a&gt;, where the real fun begins.&lt;/p&gt;
 
 &lt;h2 id=&quot;navigating-the-command-line&quot;&gt;Navigating the command line&lt;/h2&gt;
 
+&lt;p&gt;Here are a number of useful links:
+- This &lt;a href=&quot;http://www.ee.surrey.ac.uk/Teaching/Unix/&quot;&gt;tutorial from the University of Surrey&lt;/a&gt; is a good introduction. Read up to chapter 4, and leave the rest for later.
+- &lt;a href=&quot;https://cvw.cac.cornell.edu/Linux/default&quot;&gt;An Introduction to Linux Virtual Workshop&lt;/a&gt;. This tutorial is slightly&lt;/p&gt;
+
+&lt;h3 id=&quot;more-advanced-tutorials&quot;&gt;More advanced tutorials&lt;/h3&gt;
+&lt;p&gt;These might be overkill to start with, but we list them here as references you may want to check out later.
+- &lt;a href=&quot;http://linuxcommand.org/lc3_learning_the_shell.php&quot;&gt;LinuxCommand.org&lt;/a&gt;. Very comprehensive into, though perhaps a bit dense.
+- &lt;a href=&quot;http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf&quot;&gt;A Practical Guide to Linux Commands Editors and Shell Programming&lt;/a&gt;. This is an actual book, covering a lot of different topics.
+- &lt;a href=&quot;http://www.pehjota.net/guides/shell-workshop/&quot;&gt;Shell workshop&lt;/a&gt; A series of slides and code examples for how to use the shell. Perhaps a bit dry, but very useful.
+- &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/basic-linux-navigation-and-file-management&quot;&gt;Basic Linux Navigation and File Management&lt;/a&gt;. More general and basic
+- &lt;a href=&quot;http://www.physics.smu.edu/coan/linux/index.html&quot;&gt;Linux Driver’s Ed&lt;/a&gt; &lt;strong&gt;Goal:&lt;/strong&gt; To transform an intelligent, motivated person with zero linux experience into a capable linux user without inducing tears, drawing blood or triggering frustration-fueled outbursts of profanity.&lt;/p&gt;
+
 &lt;h2 id=&quot;install-python&quot;&gt;Install python&lt;/h2&gt;
 
-&lt;h2 id=&quot;installing-software-from-source&quot;&gt;Installing software from source&lt;/h2&gt;
+&lt;p&gt;There are Ubuntu-specific instructions provided in &lt;a href=&quot;http://askubuntu.com/questions/244544/how-do-i-install-python-3-3&quot;&gt;this form answer&lt;/a&gt;. You will get a lot of your most useful information from forum answers like this one. Follow these instructions up to &lt;code&gt;make &amp;amp;&amp;amp; sudo make install&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can then use &lt;code&gt;pip&lt;/code&gt;, which comes with Python to &lt;a href=&quot;http://ipython.org/install.html&quot;&gt;install IPython&lt;/a&gt;, an interactive environment you can use for playing around (&lt;code&gt;pip install &quot;ipython[notebook]&quot;&lt;/code&gt;). You can then play around with the awesome &lt;a href=&quot;http://ipython.org/notebook.html&quot;&gt;ipython notebook computational environment&lt;/a&gt;. We also have a &lt;a href=&quot;http://ipython.oist.jp:8888&quot;&gt;public server&lt;/a&gt;. Don’t keep any files on the public server though, it will periodically be purged.&lt;/p&gt;
 
 &lt;h1 id=&quot;homework&quot;&gt;Homework&lt;/h1&gt;
 
-&lt;p&gt;These are exercises to be finished by next week’s class.&lt;/p&gt;
+&lt;p&gt;These are exercises to be finished by next week’s class. (for Valentin to complete)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;These are the most important linux commands you should know for sure. Describe what each one does in your own words
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;cd&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;mkdir&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;cp&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;rm&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;ln&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;cat&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;less&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Which shortcuts refer to (a) the current directory (b) to the directory above the current one (c) the home folder?&lt;/li&gt;
+  &lt;li&gt;What is the difference between a folder and a directory?&lt;/li&gt;
+  &lt;li&gt;How do you remove an empty directory? What if it is not empty? Give examples.&lt;/li&gt;
+&lt;/ol&gt;
 </content>
  </entry>
  
