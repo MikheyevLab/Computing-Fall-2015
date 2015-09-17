@@ -24,7 +24,7 @@ Here are a number of useful links:
 These might be overkill to start with, but we list them here as references you may want to check out later.
 
 - [LinuxCommand.org](http://linuxcommand.org/lc3_learning_the_shell.php). Very comprehensive into, though perhaps a bit dense.
-- [A Practical Guide to Linux Commands Editors and Shell Programming](http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf](http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf). This is an actual book, covering a lot of different topics.
+- [A Practical Guide to Linux Commands Editors and Shell Programming](http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf). This is an actual book, covering a lot of different topics.
 - [Shell workshop](http://www.pehjota.net/guides/shell-workshop/) A series of slides and code examples for how to use the shell. Perhaps a bit dry, but very useful.
 - [Basic Linux Navigation and File Management](https://www.digitalocean.com/community/tutorials/basic-linux-navigation-and-file-management). More general and basic intro.
 - [Linux Driver's Ed](http://www.physics.smu.edu/coan/linux/index.html) **Self-stated goal:** To transform an intelligent, motivated person with zero linux experience into a capable linux user without inducing tears, drawing blood or triggering frustration-fueled outbursts of profanity.
