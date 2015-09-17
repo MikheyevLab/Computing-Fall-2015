@@ -23,6 +23,7 @@ Here are a number of useful links:
 
 ### More advanced tutorials
 These might be overkill to start with, but we list them here as references you may want to check out later.
+
 - [LinuxCommand.org](http://linuxcommand.org/lc3_learning_the_shell.php). Very comprehensive into, though perhaps a bit dense.
 - [A Practical Guide to Linux Commands Editors and Shell Programming](http://www.aem.umn.edu/~aem3100/spring2013/Prentice_Hall_A_Practical_Guide_to_Linux_Commands_Editors_and_Shell_Programming_2nd.pdf
 ). This is an actual book, covering a lot of different topics.
