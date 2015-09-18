@@ -58,7 +58,7 @@ These are exercises to be finished by next week's class. Please submit homework 
 7. Create two directories (let's call them A and B). Go into A and create a (soft-)link to B. Go into that link. Where are you know? Go back to the original directory and delete B. What happend to the link in A?
 8. Can you describe the difference between a hard-link and a soft-link? Compare your result from 8. with creating a hard-link to a normal file and deleting the original.
 9. What are pipes and how are they useful? Give a couple of examples using the commands in Question 1.
-10. Execute the command `dmesg`. How would you see only the last 50 lines. How about the first 50 lines? How would you save the output as a file? How would you search the output for a keyword? Since the command is creating a lot of output is there a way to read the output at your own pace?
+10. Execute the command `dmesg` (if you are using Mac OSX and not Linux you might have to use `sudo dmesg`). How would you see only the last 50 lines. How about the first 50 lines? How would you save the output as a file? How would you search the output for a keyword? Since the command is creating a lot of output is there a way to read the output at your own pace?
 11. Why do you think using the command line might be useful? What surprised you?
 
 ## Class communication
