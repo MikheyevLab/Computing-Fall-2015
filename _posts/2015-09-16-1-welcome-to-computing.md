@@ -60,3 +60,7 @@ These are exercises to be finished by next week's class. Please submit homework 
 9. What are pipes and how are they useful? Give a couple of examples using the commands in Question 1.
 10. Execute the command `dmesg`. How would you see only the last 50 lines. How about the first 50 lines? How would you save the output as a file? How would you search the output for a keyword? Since the command is creating a lot of output is there a way to read the output at your own pace?
 11. Why do you think using the command line might be useful? What surprised you?
+
+## Class communication
+
+Please use Slack rather than email for class communication. You can use it to discuss problems amongst your classmates or to contact the instructors (using @sasha or @valentin to bring questions to our specific attention). We'll make channels for each of the lessons, and you can use them for discussion. You can sign up for the course Slack team using your oist.jp email account at [here](http://computing-team.slack.com).
