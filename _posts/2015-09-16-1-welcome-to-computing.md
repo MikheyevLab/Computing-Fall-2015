@@ -10,7 +10,7 @@ published: true
 # Resources
 
 ## Installing a Linux Virtual Machine (VM)
-If you have Linux running on your laptop you don't need to follow this step. You are already a pro. Otherwise follow [these instructions](http://www.wikihow.com/Install-Ubuntu-on-VirtualBox). They are for Windows, but should work similarly on the Mac.
+If you have Linux running on your laptop you don't need to follow this step. You are already a pro. Otherwise follow [these instructions](http://www.wikihow.com/Install-Ubuntu-on-VirtualBox). They are for Windows, but should work similarly on the Mac. If you are using Mac you can also take a look at [these instructions](http://osxdaily.com/2012/03/27/install-run-ubuntu-linux-virtualbox).
 
 You can then make your way to the [command line](https://help.ubuntu.com/community/UsingTheTerminal), where the real fun begins.
 
