@@ -37,6 +37,9 @@ You can then use `pip`, which comes with Python to [install IPython](http://ipyt
 # Homework
 These are exercises to be finished by next week's class. Please submit homework to Valentin as a pdf, using proper English, and proper formatting of code blocks. You are encouraged to write your responses in [Markdown](http://daringfireball.net/projects/markdown/syntax) a mini-language that allows for easy conversion of plain text to HTML with proper code highlighting. It is super-useful (the content of this site is written in Markdown). For writing in Markdown (and also for general programming) we recommend the excellent [Atom](https://atom.io) editor, which has installable packages that can convert Markdown to a variety of other formats, such such pdf (_e.g._, markdown-pdf, which is installable via Preferences -> Install). Of course, there are numerous other tools.
 
+## Due date
+The homework is due on Thursday 24th of September at *7:30am*. Please hand it to Valentin via e-mail, slack or in person till then.
+
 1. These are the most important linux commands you should know for sure. Describe what each one does in your own words
   - `ls`
   - `cd`
