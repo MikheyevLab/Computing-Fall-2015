@@ -19,6 +19,7 @@ Here are a number of useful links:
 
 - This [tutorial from the University of Surrey](http://www.ee.surrey.ac.uk/Teaching/Unix/) is a good introduction. Read up to chapter 4, and leave the rest for later.
 - [An Introduction to Linux Virtual Workshop](https://cvw.cac.cornell.edu/Linux/default). This tutorial is slightly more advanced, and has a good introduction to file permissions and redirection.
+- [Learn enough command line to be dangerous](http://www.learnenough.com/command-line) is a introduction that is careful in explaining the basic terms. **Self-stated goal:** Indeed, this tutorial doesn’t even assume you know what a command line is, so if you’re confused about the title, you’re still in the right place.
 
 ### More advanced tutorials
 These might be overkill to start with, but we list them here as references you may want to check out later.
