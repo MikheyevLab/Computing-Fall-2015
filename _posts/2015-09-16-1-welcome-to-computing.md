@@ -60,7 +60,7 @@ The homework is due on Thursday 24th of September at *7:30am*. Please hand it to
 5. How would you differentiate a directory from an ordinary file on the command line. How about a link?
 6. Let's say you are working in one directory in your filesystem (_e.g._, `/usr/local/dir1/dir2/xyzdir345`), then switch to another one (`cd /usr/local/foo`). Now you want to go back to the previous directory, but don't want to type out the full path name. How can you do it quickly?
 7. Create two directories (let's call them A and B). Go into A and create a (soft-)link to B. Go into that link. Where are you now? Go back to the original directory and delete B. What happend to the link in A?
-8. Can you describe the difference between a hard-link and a soft-link? Compare your result from 8. with creating a hard-link to a normal file and deleting the original.
+8. Can you describe the difference between a hard-link and a soft-link? Compare your result from 9. with creating a hard-link to a normal file and deleting the original.
 9. What are pipes and how are they useful? Give a couple of examples using the commands in Question 1.
 10. Execute the command `dmesg` (if you are using Mac OSX and not Linux you might have to use `sudo dmesg`). How would you see only the last 50 lines. How about the first 50 lines? How would you save the output as a file? How would you search the output for a keyword? Since the command is creating a lot of output is there a way to read the output at your own pace?
 11. Why do you think using the command line might be useful? What surprised you?
