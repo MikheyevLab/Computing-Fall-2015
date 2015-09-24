@@ -22,7 +22,7 @@ Some of these commands change system files and since Linux/unix has a very stric
 For more information that a look at [this tutorial by Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-manage-packages-in-ubuntu-and-debian-with-apt-get-apt-cache) or [the ubuntu help](https://help.ubuntu.com/community/AptGet/Howto).
 
 ### Note: If you are using Mac OSX
-Since Mac is a operating system that is derived from Unix most of the things we talk about in this course will also work on a mac (Try opening a terminal and do some of the things you learned in the last lecture). Sadly Apple did not implement a package manager (outside the walled garden that is the AppStore), butluckily there is a community alternative called [Homebrew](http://brew.sh/). If you want more information take a look at [this tutorial](http://dghubble.com/blog/posts/homebrew-os-x-package-management/).
+Since Mac is a operating system that is derived from Unix most of the things we talk about in this course will also work on a mac (Try opening a terminal and do some of the things you learned in the last lecture). Sadly Apple did not implement a package manager (outside the walled garden that is the AppStore), but luckily there is a community alternative called [Homebrew](http://brew.sh/). If you want more information take a look at [this tutorial](http://dghubble.com/blog/posts/homebrew-os-x-package-management/).
 
 ## Compiling packages from source.
 If a software is not available with a package manager you are probably going to have to install that package from source.
@@ -53,6 +53,7 @@ If a software is not available with a package manager you are probably going to 
 # Functions
 In Python we can wrap independent pieces of code in *functions*. We then can call these functions from the REPL or from other functions. A function should always only do one thing and that one thing well (and you should always check your input).
 In Python a function is defined by `def *function_name*(arguments...):` and the `return` keyword specifies what it gives you back.
+
 ```python
 def square(x):
   return x*x # Calculate the square of x
