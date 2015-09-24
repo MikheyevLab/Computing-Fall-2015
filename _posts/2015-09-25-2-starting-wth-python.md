@@ -95,9 +95,10 @@ You should always document your function with line comments `#` (try to make the
 ## Classes
 
 ## Binary search trees
+A very useful data structure is the *binary search tree*
 
 # Homework
-The homework is due on *October 1 2015* at *7:30am*.
+The homework is due on *October 1 2015* at *12:00pm* (eg. noon).
 
 1. Install `python 2.7` and the `ipython-notebook` on your virtual machine(VM).
 2. Update the software that is installed on your VM.
