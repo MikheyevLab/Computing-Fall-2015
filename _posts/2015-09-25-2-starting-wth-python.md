@@ -48,11 +48,35 @@ For more information on `./configure && make && make install` [take a look here]
 The scientific computing section at OIST is maintaining a set of documentations at [SCS](https://groups.oist.jp/scs/documentation) and for all things Linux I can always recommend the [ArchLinux wiki](https://wiki.archlinux.org/).
 
 # What is Python
+Python is a general-use, high-level programming language. It aims to provide a simple syntax combined with a powerful base library, to enable a high productivity and accessibility for programmers. [Take a look at this blurb](https://www.python.org/doc/essays/blurb/).
 
-- Introduce
-  - REPL
-  - Jupyter/IPython
-  - Running scripts
+Running Python on the terminal will provide you with a `REPL` interface. Similar to the output shown below.
+
+```
+Python 3.4.3 (default, Sep  7 2015, 15:40:35)
+[GCC 5.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+`REPL` stands for *r*ead-*e*valuate-*p*rint *l*oop and it allows you to enter Python code directly into the terminal and see the result of the computation.
+
+```
+>>> 1+2
+3
+>>> print("Hello World!")
+Hello World!
+>>>
+```
+
+## Running scripts
+Often you want to save a series of Python commands as a script. For that you can open a text file in an editor. Write the commands you want to be executed and then save the file with a `.py` ending. Execute the file then from the command line with `python myfile.py`.
+
+### Editors
+> On the terminal you can use `nano`, `vim` or `emacs` to open and write text files. `nano` is the simplest of the three and the other two are very powerful, but also have a steep learning curve.
+> Otherwise we recommend using a graphical text editor with syntax highlighting for Python like `Atom` or `Sublime Text`.
+
+## Jupyter/IPython
 
 ## Resources on Python
 There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/3/) and [Dive into Python3](http://www.diveintopython3.net/) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/)(However this is in Python2).
@@ -155,7 +179,7 @@ The left child of the root is always smaller than the root and the right child i
 # Homework
 The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your homework either as a IPython notebook or a pdf + the source code you wrote.
 
-1. Install `python 3.4 or 3.5` and the `ipython-notebook` on your virtual machine(VM).
+1. Install `python 3.4 or 3.5` and `jupyter` or the `ipython-notebook` on your virtual machine(VM).
 2. Update the software that is installed on your VM.
 1. What is a function? Describe in your own words.
 2. What is a class? Describe in your own words.
