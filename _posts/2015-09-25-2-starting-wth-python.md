@@ -51,13 +51,13 @@ The scientific computing section at OIST is maintaining a set of documentations 
 
 - Introduce
   - REPL
-  - IPython
+  - Jupyter/IPython
   - Running scripts
 
 ## Resources on Python
+There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/2/) and [Dive into Python](http://www.diveintopython.net/toc/index.html) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/).
 
-- Python documentation
-- Good basic tutorial
+If you are interested in Python 3 take a look at [Dive into Python3](http://www.diveintopython3.net/).
 
 # Control structures
 
@@ -142,7 +142,7 @@ D   E   F
 The left child of the root is always smaller than the root and the right child is always larger (under a defined ordering operator). Such a tree is always completely sorted and the smallest element in the tree is the left-most element and the biggest element is the right-most element.
 
 # Homework
-The homework is due on *October 1 2015* at *12:00pm* (eg. noon).
+The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your homework either as a IPython notebook or a pdf + the source code you wrote.
 
 1. Install `python 2.7` and the `ipython-notebook` on your virtual machine(VM).
 2. Update the software that is installed on your VM.
