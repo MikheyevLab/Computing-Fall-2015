@@ -25,13 +25,27 @@ For more information that a look at [this tutorial by Digital Ocean](https://www
 Since Mac is a operating system that is derived from Unix most of the things we talk about in this course will also work on a mac (Try opening a terminal and do some of the things you learned in the last lecture). Sadly Apple did not implement a package manager (outside the walled garden that is the AppStore), but luckily there is a community alternative called [Homebrew](http://brew.sh/). If you want more information take a look at [this tutorial](http://dghubble.com/blog/posts/homebrew-os-x-package-management/).
 
 ## Compiling packages from source.
-If a software is not available with a package manager you are probably going to have to install that package from source.
+If a software is not available with a package manager you are probably going to have to install that package from source. The source code is a human readable description of the program. Just to name a few `C`, `Fortran`, `C++`, `C#`, `Java`, `Matlab`, `Perl`, `Haskell`, `Python`, `Julia`, `R` and `JavaScript`. All these languages differ a bit, sometimes they follow fundamentally different principles or have different target audiences, but one of the broadest possible differences is at which point in time the translation from source code to machine code is happening. For languages that are more low-level (closer to the metal) the translation from source code to machine code (a process that is called compiling) happens before the execution. The output the compiler creates is called a binary. Python on the other hand is a interpreted or *J*ust *i*n *T*ime compiled (JIT'ed) language, that means that the translation into a machine understandable representation happens as late as possible, this gives a create deal of flexibility and enables many of the high-level features of python.
 
-- Explain
-  - source code
-  - compiling
-  - binaries
-  - Every installation is different search for a file called readme/install
+```sh
+# Example of an installation from source
+wget http://www.greenwoodsoftware.com/less/less-458.tar.gz # wget downloads files from remote hosts
+tar -xvf less-458.tar.gz # tar.gz is the zip format of Linux
+cd less-458
+./configure
+make
+# Test the program
+dmesg | ./less # use the freshly build binary
+# Sine we already have less installed on our system we don't need to do this
+# make install
+```
+
+There are a lot of different tool-chains and ways of actually compiling packages, so before you start doing it take a look at the programs `INSTALL` or `README` description.
+
+For more information on `./configure && make && make install` [take a look here](https://robots.thoughtbot.com/the-magic-behind-configure-make-make-install)
+
+# Other resources
+The scientific computing section at OIST is maintaining a set of documentations at [SCS](https://groups.oist.jp/scs/documentation) and for all things Linux I can always recommend the [ArchLinux wiki](https://wiki.archlinux.org/).
 
 # What is Python
 
@@ -41,6 +55,9 @@ If a software is not available with a package manager you are probably going to 
   - Running scripts
 
 ## Resources on Python
+
+- Python documentation
+- Good basic tutorial
 
 # Control structures
 
@@ -74,6 +91,9 @@ print(square_list([1,2,3,4,5]))
 ```
 
 You should always document your function with line comments `#` (try to make them more useful than my example above eg. don't state the obvious.) and describe what your function does with a [docstring](https://www.python.org/dev/peps/pep-0257/) (see the `square_list` example).
+
+- Links about function scopes
+- Keyword arguments
 
 # Data structures and memory
 
