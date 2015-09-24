@@ -157,7 +157,11 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon).
     ```
 4. What are atomic data-structures and why are they special?
 5. What is a list? In other programming languages you might encounter the term array, is there any difference to a list in python?
+6. What is a dictionary? How do you check if a key is already present? Hw do you get a list of keys and/or a list of values?
+7. What is the difference between a list and an iterator? In python take a look at `range` versus `xrange`.
+9. Let's say you want to read a very large file that contains many lines of text. What is the advantage of using an iterator, compared to a list when looping over all of its lines?
 6. Implement a binary search tree in python.
+  - First think about how you would model such a tree and what basic components it has.
   - Assume that element types are integers.
   - Implement the search tree in a class.
   - Implement a function that inserts an integer into the tree.
@@ -167,4 +171,4 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon).
   - *Note:* This exercise is fairly challenging, so don't worry if you don't succeed and just hand in how far you got and why you got stuck there.
 7. How would you test that your implementation is correct?
 8. What might the be the benefits of a tree as opposed to a list. Think about searching and sorting entries. (We are going to talk about this in two weeks in more detail.)
-9. Let's say you want to read a very large file that contains many lines of text. What is the advantage of using an iterator, compared to a list when looping over all of its lines?
+
