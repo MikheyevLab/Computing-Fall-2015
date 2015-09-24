@@ -27,13 +27,18 @@ Since Mac is a operating system that is derived from Unix most of the things we 
 ## Compiling packages from source.
 If a software is not available with a package manager you are probably going to have to install that package from source.
 
-Todo:
- - source code
- - compiling
- - binaries
- - Every installation is different search for a file called readme/install
+- Explain
+  - source code
+  - compiling
+  - binaries
+  - Every installation is different search for a file called readme/install
 
 # What is Python
+
+- Introduce
+  - REPL
+  - IPython
+  - Running scripts
 
 ## Resources on Python
 
@@ -46,6 +51,28 @@ Todo:
 ## While loops
 
 # Functions
+In Python we can wrap independent pieces of code in *functions*. We then can call these functions from the REPL or from other functions. A function should always only do one thing and that one thing well (and you should always check your input).
+In Python a function is defined by `def *function_name*(arguments...):` and the `return` keyword specifies what it gives you back.
+```python
+def square(x):
+  return x*x # Calculate the square of x
+
+def sum_squared(x, y):
+  return square(x) + square(y)
+
+def say(name):
+  print("Hello ", name, " how are you doing today?")
+
+def square_list(list)
+  """ Takes a list of numbers and squares them"""
+  return map(square, list)
+
+print(square(2.0))
+say("Sascha")
+print(square_list([1,2,3,4,5]))
+```
+
+You should always document your function with line comments `#` (try to make them more useful than my example above eg. don't state the obvious.) and describe what your function does with a [docstring](https://www.python.org/dev/peps/pep-0257/) (see the `square_list` example).
 
 # Data structures and memory
 
