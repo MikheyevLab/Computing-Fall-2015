@@ -92,28 +92,31 @@ print(square_list([1,2,3,4,5]))
 
 You should always document your function with line comments `#` (try to make them more useful than my example above eg. don't state the obvious.) and describe what your function does with a [docstring](https://www.python.org/dev/peps/pep-0257/) (see the `square_list` example).
 
-- Links about function scopes
-- Keyword arguments
+## Function scopes
+
+You can define functions and variables within different contexts in Python (and most other languages). Some definitions are *globabl*., i.e., available throughout the code, while others are *local*, and are defined within particular contexts. In general, it is better to use local variables, and understand how scoping works, so as to minimize potential for variable names conflicting.
+- [A Beginner’s Guide to Python’s Namespaces, Scope Resolution, and the LEGB Rule](http://spartanideas.msu.edu/2014/05/12/a-beginners-guide-to-pythons-namespaces-scope-resolution-and-the-legb-rule/)
+- [StackOverflow discussion on Python function scopes](http://stackoverflow.com/questions/291978/short-description-of-python-scoping-rules)
+
+## Function arguments
+
+You can pass variables to functions, including variable length argument Lists:
+- [Very basic intro](http://www.ibiblio.org/g2swap/byteofpython/read/keyword-arguments.html)
+- [How to use \*args and \*\*kwargs in Python](http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/). More advanced
 
 # Data structures and memory
 
-## Atomic Data Types
+Python has many data types. Each has its particular properties and uses. There is a good overview of data types in [Dive Into Python](http://www.diveintopython3.net/native-datatypes.html). Among those you should know are:
 
-### Booleans
-
-### Numbers
-
-### Characters
-
-## Built-in collections
-
-### Lists and arrays
-
-### Strings
-
-### Dictionaries
-
-## Classes
+- Atomic Data Types: these are used to store low-level data
+ - Booleans
+ - Numbers
+ - Characters
+- Built-in collections: used to create relationships between data
+ - Lists and arrays
+ - Strings
+ - Dictionaries
+- [Classes and iterators](http://www.diveintopython3.net/iterators.html): used to both store data and operate upon them.
 
 ## Binary search trees
 A very useful data structure is the *binary search tree*. A tree consists of a directed acyclic graph in which every node has `n` children. A graph is a set of nodes (think cities on a map) that are connected by edges (think roads between cities). In a directed graph you can only travel along one a edge in one direction (think water pipes). Acyclic just means that there are no loops in the graph. Below you can see a generic tree (turn it upside down to see why it is called a tree ;) ).
@@ -164,3 +167,4 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon).
   - *Note:* This exercise is fairly challenging, so don't worry if you don't succeed and just hand in how far you got and why you got stuck there.
 7. How would you test that your implementation is correct?
 8. What might the be the benefits of a tree as opposed to a list. Think about searching and sorting entries. (We are going to talk about this in two weeks in more detail.)
+9. Let's say you want to read a very large file that contains many lines of text. What is the advantage of using an iterator, compared to a list when looping over all of its lines?
