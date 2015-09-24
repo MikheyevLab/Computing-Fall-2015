@@ -116,7 +116,27 @@ You should always document your function with line comments `#` (try to make the
 ## Classes
 
 ## Binary search trees
-A very useful data structure is the *binary search tree*
+A very useful data structure is the *binary search tree*. A tree consists of a directed acyclic graph in which every node has `n` children. A graph is a set of nodes (think cities on a map) that are connected by edges (think roads between cities). In a directed graph you can only travel along one a edge in one direction (think water pipes). Acyclic just means that there are no loops in the graph. Below you can see a generic tree (turn it upside down to see why it is called a tree ;) ).
+
+```
+   A
+ / | \
+C  D  E
+|    / \
+F   G   H
+```
+
+A binary search tree is a tree where each node only has *two* children and there is a order relationship between the *root* and its children.
+
+```
+    A
+   / \
+  B   C
+ / \   \
+D   E   F
+```
+
+The left child of the root is always smaller than the root and the right child is always larger (under a defined ordering operator). Such a tree is always completely sorted and the smallest element in the tree is the left-most element and the biggest element is the right-most element.
 
 # Homework
 The homework is due on *October 1 2015* at *12:00pm* (eg. noon).
@@ -126,8 +146,21 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon).
 1. What is a function? Describe in your own words.
 2. What is a class? Describe in your own words.
 3. Transform the following for loop into an equivalent while loop.
+
+    ```python
+    for i in range(1, 10):
+        if i % 2 == 0:
+            print(i)
+    ```
 4. What are atomic data-structures and why are they special?
 5. What is a list? In other programming languages you might encounter the term array, is there any difference to a list in python?
-6. Implement a binary search tree in python (assume that element types are integers). This task is fairly challenging, so don't worry if you don't succeed and just hand in how far you got and why you got stuck there.
+6. Implement a binary search tree in python.
+  - Assume that element types are integers.
+  - Implement the search tree in a class.
+  - Implement a function that inserts an integer into the tree.
+  - Implement a function that creates a tree from a list of integers.
+  - Implement a function that takes a tree and an integer and searches for the integer in the tree. Returning `true` if it is in the tree and `false` if not.
+  - Implement a function that prints a tree from its smallest to it largest element.
+  - *Note:* This exercise is fairly challenging, so don't worry if you don't succeed and just hand in how far you got and why you got stuck there.
 7. How would you test that your implementation is correct?
-8. What might the be the benefits of a tree as opposed to a list. Think about searching and sorting entries. (No worries if you don't know what to write down here. We are going to talk about this in two weeks in more detail.)
+8. What might the be the benefits of a tree as opposed to a list. Think about searching and sorting entries. (We are going to talk about this in two weeks in more detail.)
