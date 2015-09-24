@@ -55,9 +55,7 @@ The scientific computing section at OIST is maintaining a set of documentations 
   - Running scripts
 
 ## Resources on Python
-There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/2/) and [Dive into Python](http://www.diveintopython.net/toc/index.html) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/).
-
-If you are interested in Python 3 take a look at [Dive into Python3](http://www.diveintopython3.net/).
+There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/3/) and [Dive into Python3](http://www.diveintopython3.net/) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/)(However this is in Python2).
 
 # Control structures
 
@@ -108,7 +106,7 @@ You can pass variables to functions, including variable length argument Lists:
 
 Python has many data types. Each has its particular properties and uses. There is a good overview of data types in [Dive Into Python](http://www.diveintopython3.net/native-datatypes.html). Among those you should know are:
 
-- Atomic Data Types: these are used to store low-level data
+- [Atomic Data Types:](http://www.diveintopython3.net/native-datatypes.html) these are used to store low-level data
  - Booleans
  - Numbers
  - Characters
@@ -116,7 +114,20 @@ Python has many data types. Each has its particular properties and uses. There i
  - Lists and arrays
  - Strings
  - Dictionaries
-- [Classes and iterators](http://www.diveintopython3.net/iterators.html): used to both store data and operate upon them.
+- [Classes & Iterators](http://www.diveintopython3.net/iterators.html) Classes are used to model the world and to define objects that can be used to store data and to operate upon.
+
+    ```python
+    class Person:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+        def say(self):
+          print("Hello ", self.name, " how are you doing today?")
+
+    ta = Person("Valentin", 23)
+    ta.say()
+    ```
+    Iterators on the other hand are a very handy concept to work efficiently with large sets of data.
 
 ## Binary search trees
 A very useful data structure is the *binary search tree*. A tree consists of a directed acyclic graph in which every node has `n` children. A graph is a set of nodes (think cities on a map) that are connected by edges (think roads between cities). In a directed graph you can only travel along one a edge in one direction (think water pipes). Acyclic just means that there are no loops in the graph. Below you can see a generic tree (turn it upside down to see why it is called a tree ;) ).
@@ -144,7 +155,7 @@ The left child of the root is always smaller than the root and the right child i
 # Homework
 The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your homework either as a IPython notebook or a pdf + the source code you wrote.
 
-1. Install `python 2.7` and the `ipython-notebook` on your virtual machine(VM).
+1. Install `python 3.4 or 3.5` and the `ipython-notebook` on your virtual machine(VM).
 2. Update the software that is installed on your VM.
 1. What is a function? Describe in your own words.
 2. What is a class? Describe in your own words.
