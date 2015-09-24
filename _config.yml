@@ -20,4 +20,6 @@ sass:
 
 pages_list:
   Syllabus: '/syllabus'
- 
+
+markdown: redcarpet
+
