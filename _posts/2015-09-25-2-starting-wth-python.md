@@ -50,6 +50,8 @@ The scientific computing section at OIST is maintaining a set of documentations 
 # What is Python
 Python is a general-use, high-level programming language. It aims to provide a simple syntax combined with a powerful base library, to enable a high productivity and accessibility for programmers. [Take a look at this blurb](https://www.python.org/doc/essays/blurb/).
 
+Currently there are two different Python version used in the wild. The older version `2.7` and the newer version `3.X`. These versions are largely similar, but Python 3 introduced some backward compatibility breaking changes for the sake of making the language more internally consistent. In this course we will largely focus on Python 3.
+
 Running Python on the terminal will provide you with a `REPL` interface. Similar to the output shown below.
 
 ```
@@ -77,17 +79,43 @@ Often you want to save a series of Python commands as a script. For that you can
 > Otherwise we recommend using a graphical text editor with syntax highlighting for Python like `Atom` or `Sublime Text`.
 
 ## Jupyter/IPython
+For scientific computing the [Jupyter](https://jupyter.org/) project (formerly called IPython) provides a very nice environment/interface to work with. We recommend giving it a look, but you can always work just with scripts.
+
+## Python packages
+There are a lot of Python packages out there and most of the time if you face a problem there will be a packages that gets you there at least partially. Take a look at the [Python Package Index](https://pypi.python.org/pypi) and [the `pip` tutorial](https://packaging.python.org/en/latest/installing/).
+
+## Python in Ubuntu
+Since there are two different Python version and both are still in use you might run into problems if you execute just `python`. Run `python --version` and if it says `python 2.7.X` then try running `python3`. The same might hold true for tools like `pip`.
 
 ## Resources on Python
 There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/3/) and [Dive into Python3](http://www.diveintopython3.net/) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/)(However this is in Python2).
 
 # Control structures
 
-## If statements
+- If statements
 
-## For loops
+    ```python
+    a = 3
+    if (a == 3):
+      print("This statement is obvliously true.")
+    else:
+      print("Something has gone horribly wrong!")
 
-## While loops
+    ```
+    General form:
+
+    ```python
+    if (condition):
+        ...
+    elif (condition):
+        ...
+    else:
+      ...
+    ```
+
+
+- For loops
+- While loops
 
 # Functions
 In Python we can wrap independent pieces of code in *functions*. We then can call these functions from the REPL or from other functions. A function should always only do one thing and that one thing well (and you should always check your input).
@@ -117,12 +145,14 @@ You should always document your function with line comments `#` (try to make the
 ## Function scopes
 
 You can define functions and variables within different contexts in Python (and most other languages). Some definitions are *globabl*., i.e., available throughout the code, while others are *local*, and are defined within particular contexts. In general, it is better to use local variables, and understand how scoping works, so as to minimize potential for variable names conflicting.
+
 - [A Beginner’s Guide to Python’s Namespaces, Scope Resolution, and the LEGB Rule](http://spartanideas.msu.edu/2014/05/12/a-beginners-guide-to-pythons-namespaces-scope-resolution-and-the-legb-rule/)
 - [StackOverflow discussion on Python function scopes](http://stackoverflow.com/questions/291978/short-description-of-python-scoping-rules)
 
 ## Function arguments
 
 You can pass variables to functions, including variable length argument Lists:
+
 - [Very basic intro](http://www.ibiblio.org/g2swap/byteofpython/read/keyword-arguments.html)
 - [How to use \*args and \*\*kwargs in Python](http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/). More advanced
 
@@ -130,7 +160,7 @@ You can pass variables to functions, including variable length argument Lists:
 
 Python has many data types. Each has its particular properties and uses. There is a good overview of data types in [Dive Into Python](http://www.diveintopython3.net/native-datatypes.html). Among those you should know are:
 
-- [Atomic Data Types:](http://www.diveintopython3.net/native-datatypes.html) these are used to store low-level data
+- Atomic Data Types: these are used to store low-level data
  - Booleans
  - Numbers
  - Characters
@@ -179,7 +209,7 @@ The left child of the root is always smaller than the root and the right child i
 # Homework
 The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your homework either as a IPython notebook or a pdf + the source code you wrote.
 
-1. Install `python 3.4 or 3.5` and `jupyter` or the `ipython-notebook` on your virtual machine(VM).
+1. Install `python3`, `python3-pip` and use `pip` to install `jupyter` on your virtual machine(VM).
 2. Update the software that is installed on your VM.
 1. What is a function? Describe in your own words.
 2. What is a class? Describe in your own words.
@@ -193,7 +223,6 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your ho
 4. What are atomic data-structures and why are they special?
 5. What is a list? In other programming languages you might encounter the term array, is there any difference to a list in python?
 6. What is a dictionary? How do you check if a key is already present? Hw do you get a list of keys and/or a list of values?
-7. What is the difference between a list and an iterator? In python take a look at `range` versus `xrange`.
 9. Let's say you want to read a very large file that contains many lines of text. What is the advantage of using an iterator, compared to a list when looping over all of its lines?
 6. Implement a binary search tree in python.
   - First think about how you would model such a tree and what basic components it has.
