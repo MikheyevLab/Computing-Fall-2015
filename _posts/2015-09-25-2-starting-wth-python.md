@@ -25,7 +25,7 @@ For more information that a look at [this tutorial by Digital Ocean](https://www
 Since Mac is a operating system that is derived from Unix most of the things we talk about in this course will also work on a mac (Try opening a terminal and do some of the things you learned in the last lecture). Sadly Apple did not implement a package manager (outside the walled garden that is the AppStore), but luckily there is a community alternative called [Homebrew](http://brew.sh/). If you want more information take a look at [this tutorial](http://dghubble.com/blog/posts/homebrew-os-x-package-management/).
 
 ## Compiling packages from source.
-If a software is not available with a package manager you are probably going to have to install that package from source. The source code is a human readable description of the program. Just to name a few `C`, `Fortran`, `C++`, `C#`, `Java`, `Matlab`, `Perl`, `Haskell`, `Python`, `Julia`, `R` and `JavaScript`. All these languages differ a bit, sometimes they follow fundamentally different principles or have different target audiences, but one of the broadest possible differences is at which point in time the translation from source code to machine code is happening. For languages that are more low-level (closer to the metal) the translation from source code to machine code (a process that is called compiling) happens before the execution. The output the compiler creates is called a binary. Python on the other hand is a interpreted or *J*ust *i*n *T*ime compiled (JIT'ed) language, that means that the translation into a machine understandable representation happens as late as possible, this gives a create deal of flexibility and enables many of the high-level features of python.
+If a software is not available with a package manager you are probably going to have to install that package from source. The source code is a human readable description of the program. Just to name a few `C`, `Fortran`, `C++`, `C#`, `Java`, `Matlab`, `Perl`, `Haskell`, `Python`, `Julia`, `R` and `JavaScript`. All these languages differ a bit, sometimes they follow fundamentally different principles or have different target audiences, but one of the broadest possible differences is at which point in time the translation from source code to machine code is happening. For languages that are more low-level (closer to the metal) the translation from source code to machine code (a process that is called compiling) happens before the execution. The output the compiler creates is called a binary. Python on the other hand is a interpreted or *J*ust *i*n *T*ime compiled (JIT'ed) language, that means that the translation into a machine understandable representation happens as late as possible, this gives a create deal of flexibility and enables many of the high-level features of Python.
 
 ```sh
 # Example of an installation from source
@@ -81,25 +81,56 @@ Often you want to save a series of Python commands as a script. For that you can
 ## Jupyter/IPython
 For scientific computing the [Jupyter](https://jupyter.org/) project (formerly called IPython) provides a very nice environment/interface to work with. We recommend giving it a look, but you can always work just with scripts.
 
-## Python packages
+## Python packages and modules
 There are a lot of Python packages out there and most of the time if you face a problem there will be a packages that gets you there at least partially. Take a look at the [Python Package Index](https://pypi.python.org/pypi) and [the `pip` tutorial](https://packaging.python.org/en/latest/installing/).
+
+In python there is a notion of *modules* and you can use the [`import` statement](https://docs.python.org/3/reference/import.html) to load the into the current name-space. As an example to import common mathematics functions:
+
+```python
+import math
+
+math.sin(math.pi)
+```
+or
+
+```python
+from math import sin, pi
+
+sin(pi)
+```
+or
+
+```python
+from math import *
+
+sin(pi) + cos(pi)
+```
+or
+
+```python
+import math as m
+
+m.sin(m.pi)
+```
 
 ## Python in Ubuntu
 Since there are two different Python version and both are still in use you might run into problems if you execute just `python`. Run `python --version` and if it says `python 2.7.X` then try running `python3`. The same might hold true for tools like `pip`.
 
 ## Resources on Python
-There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/3/) and [Dive into Python3](http://www.diveintopython3.net/) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/)(However this is in Python2).
+There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/3/), the [official tutorial](https://docs.python.org/3.5/tutorial/index.html) and [Dive into Python3](http://www.diveintopython3.net/) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/)(However this is in Python2).
 
 # Control structures
+Control structures are used in programming language to check inputs, conditionally execute code and repeat code segments. The three most common constructs are `if`, `for` and `while` and most programming languages have them in one form or the other. See the [Python tutorial](https://docs.python.org/3.5/tutorial/controlflow.html) or the [Python documentation](https://docs.python.org/3.5/reference/compound_stmts.html) for more information.
 
 - If statements
+    The most basic control flow methods, based on a condition (a Python expression that evaluates to a `True` or `False`) execute a portion of code.
 
     ```python
     a = 3
     if (a == 3):
-      print("This statement is obvliously true.")
+        print("This statement is obvliously true.")
     else:
-      print("Something has gone horribly wrong!")
+        print("Something has gone horribly wrong!")
 
     ```
     General form:
@@ -112,10 +143,38 @@ There are many good resources on the web on how to use python. As first point of
     else:
       ...
     ```
-
-
 - For loops
+    With for loop you can go over a set of values or through an iterator.
+
+    ```python
+    values = ['a', "hello world", 1, 3.14]
+    for value in values:
+        print(value)
+    for i in range(0, 10):
+      print(i)
+    ```
+    General form:
+
+    ```python
+    for *val* in *iterator*:
+        ...
+    ```
+    You can use `break` to exit a for loop prematurely and `continue` to skip to the next iteration.
 - While loops
+    A while loop is a programming construct that allows the repeated execution of a piece of code as long as a certain condition holds true. Similarly to for loops you can use `break` and `continue`.
+
+    ```python
+    import random
+    sum = 0
+    while (sum <= 100):
+      sum += random.randin(0, 10)
+    ```
+    General form:
+
+    ```python
+    while (condition):
+      ...
+    ```
 
 # Functions
 In Python we can wrap independent pieces of code in *functions*. We then can call these functions from the REPL or from other functions. A function should always only do one thing and that one thing well (and you should always check your input).
@@ -221,10 +280,10 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your ho
             print(i)
     ```
 4. What are atomic data-structures and why are they special?
-5. What is a list? In other programming languages you might encounter the term array, is there any difference to a list in python?
+5. What is a list? In other programming languages you might encounter the term array, is there any difference to a list in Python? Does Python have arrays?
 6. What is a dictionary? How do you check if a key is already present? Hw do you get a list of keys and/or a list of values?
 9. Let's say you want to read a very large file that contains many lines of text. What is the advantage of using an iterator, compared to a list when looping over all of its lines?
-6. Implement a binary search tree in python.
+6. Implement a binary search tree in Python.
   - First think about how you would model such a tree and what basic components it has.
   - Assume that element types are integers.
   - Implement the search tree in a class.
