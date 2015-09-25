@@ -128,7 +128,7 @@ Control structures are used in programming language to check inputs, conditional
     ```python
     a = 3
     if (a == 3):
-        print("This statement is obvliously true.")
+        print("This statement is obviously true.")
     else:
         print("Something has gone horribly wrong!")
 
@@ -167,7 +167,7 @@ Control structures are used in programming language to check inputs, conditional
     import random
     sum = 0
     while (sum <= 100):
-      sum += random.randin(0, 10)
+      sum += random.randint(0, 10)
     ```
     General form:
 
@@ -278,7 +278,7 @@ The left child of the root is always smaller than the root and the right child i
 # Homework
 The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your homework either as a IPython notebook or a pdf + the source code you wrote.
 
-1. Install `python3`, `python3-pip` and use `pip` to install `jupyter` on your virtual machine(VM).
+1. Install `python3`, `python3-pip` and use `pip` to install `jupyter` on your virtual machine(VM). Use the package manager for this.
 2. Update the software that is installed on your VM.
 1. What is a function? Describe in your own words.
 2. What is a class? Describe in your own words.
@@ -291,7 +291,7 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your ho
     ```
 4. What are atomic data-structures and why are they special?
 5. What is a list? In other programming languages you might encounter the term array, is there any difference to a list in Python? Does Python have arrays?
-6. What is a dictionary? How do you check if a key is already present? Hw do you get a list of keys and/or a list of values?
+6. What is a dictionary? How do you check if a key is already present? How do you get a list of keys and/or a list of values?
 9. Let's say you want to read a very large file that contains many lines of text. What is the advantage of using an iterator, compared to a list when looping over all of its lines?
 6. Implement a binary search tree in Python.
   - First think about how you would model such a tree and what basic components it has.
