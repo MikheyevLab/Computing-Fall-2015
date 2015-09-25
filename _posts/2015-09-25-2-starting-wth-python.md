@@ -4,7 +4,7 @@ title: 2. Starting with Python
 categories: []
 tags:
   - news
-published: false
+published: true
 ---
 
 # Installing Software under Linux
