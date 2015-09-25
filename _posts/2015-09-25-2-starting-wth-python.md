@@ -263,6 +263,16 @@ A binary search tree is a tree where each node only has *two* children and there
 D   E   F
 ```
 
+Example with numbers:
+
+
+```
+    7
+   / \
+  3   13
+ / \   \
+1   5   17
+```
 The left child of the root is always smaller than the root and the right child is always larger (under a defined ordering operator). Such a tree is always completely sorted and the smallest element in the tree is the left-most element and the biggest element is the right-most element.
 
 # Homework
