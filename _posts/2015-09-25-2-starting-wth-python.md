@@ -16,7 +16,7 @@ Under Ubuntu the package manager is called `apt` and uses `*.deb` files as packa
   - `apt-get install *pkgname*` Installs the package with name *pkgname*
   - `apt-get update` Updates the local cache of available packages.
   - `apt-get upgrade` Upgrades all installed packages to the newest available version.
-- `apt-cache search *searterm*` searches the local cache of available packages after *searchterm*
+- `apt-cache search *searchterm*` searches the local cache of available packages after *searchterm*
 
 Some of these commands change system files and since Linux/unix has a very strict security mindset you will have to prefix them with `sudo`(*s*witch *u*ser *do* `cmd`).
 For more information that a look at [this tutorial by Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-manage-packages-in-ubuntu-and-debian-with-apt-get-apt-cache) or [the ubuntu help](https://help.ubuntu.com/community/AptGet/Howto).
