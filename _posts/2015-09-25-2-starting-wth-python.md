@@ -278,7 +278,11 @@ The left child of the root is always smaller than the root and the right child i
 # Homework
 The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your homework either as a IPython notebook or a pdf + the source code you wrote.
 
-1. Install `python3`, `python3-pip` and use `pip` to install `jupyter` on your virtual machine(VM). Use the package manager for this.
+1. Install `python3`, `python3-pip` `libzmq-dev` and use `pip` to install `jupyter` on your virtual machine(VM). Use the different package managers and `sudo` for this.
+    ```bash
+    sudo apt-get install
+    sudp pip3 install
+    ```
 2. Update the software that is installed on your VM.
 1. What is a function? Describe in your own words.
 2. What is a class? Describe in your own words.
