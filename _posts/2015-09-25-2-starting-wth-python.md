@@ -119,6 +119,9 @@ Since there are two different Python version and both are still in use you might
 ## Resources on Python
 There are many good resources on the web on how to use python. As first point of contact use the [official documentation](https://docs.python.org/3/), the [official tutorial](https://docs.python.org/3.5/tutorial/index.html) and [Dive into Python3](http://www.diveintopython3.net/) as well as [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english2e/)(However this is in Python2).
 
+- A good summary of python introductions can also be found [here](http://docs.python-guide.org/en/latest/intro/learning/)
+- [30 Python Language Features and Tricks You May Not Know About](http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html)
+
 # Control structures
 Control structures are used in programming language to check inputs, conditionally execute code and repeat code segments. The three most common constructs are `if`, `for` and `while` and most programming languages have them in one form or the other. See the [Python tutorial](https://docs.python.org/3.5/tutorial/controlflow.html) or the [Python documentation](https://docs.python.org/3.5/reference/compound_stmts.html) for more information.
 
@@ -308,4 +311,3 @@ The homework is due on *October 1 2015* at *12:00pm* (eg. noon). Hand in your ho
   - *Note:* This exercise is fairly challenging, so don't worry if you don't succeed and just hand in how far you got and why you got stuck there.
 7. How would you test that your implementation is correct?
 8. What might the be the benefits of a tree as opposed to a list. Think about searching and sorting entries. (We are going to talk about this in two weeks in more detail.)
-
