@@ -34,7 +34,7 @@ One of the most fundamental things you can do with two bits, is binary logic or 
 #### `xor`
 There is also the exclusive or (`xor`):
 
-| In1 | In2 | Out |
+| x | y | `x xor y` |
 | --- | --- | --- |
 |  0  |  0  |  0  |
 |  0  |  1  |  1  |
@@ -79,6 +79,8 @@ For negative numbers the first bit is reserved as the sign so with 8 bits we can
 ### Python and Integers
 Python takes most of the worries away from you and when you add to very big numbers that could overflow it changes the representation from 32 to 64 bit. This allows you not to worry to much about stuff like this but it carries a performance penalty.
 
+- Numpy
+
 ## Real numbers
 
 - [Floating Point Numbers - Computerphile](https://www.youtube.com/watch?v=PZRI1IfStY0)
@@ -109,8 +111,8 @@ The obvious solution is to go through each element in the list and check if it i
 # Data structures
 ## Linked Lists
 ## Array Lists
-
-# Cache and memory layout
+# Operation costs in Python
+# Profiling in Python
 
 # Notes from last weeks homework
 
@@ -126,3 +128,6 @@ The homework is due on *October 15 2015* at *13:00pm* (eg. noon). Hand in your h
 4. Implement bubble sort.
 5. Implement merge sort.
 6. Why is merge sort more efficient for large `n`?
+7. What is the complexity in O() for the following codes:
+8. Floating-point numerical stability
+9. Profile and improve upon the following codes:
