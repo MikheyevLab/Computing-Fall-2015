@@ -71,6 +71,8 @@ We are back at the beginning of building computers and somebody asks you to crea
 
 How could we prevent this? Is this an intrinsic problem to how a computer handles math?
 
+- [Binary Addition & Overflow - Computerphile](https://www.youtube.com/watch?v=WN8i5cwjkSE)
+
 ### Negative numbers
 For negative numbers the first bit is reserved as the sign so with 8 bits we can represent numbers from -128 to 127. The particular representation that is used is called [2-complement](https://www.youtube.com/watch?v=lKTsv6iVxV4).
 
@@ -79,17 +81,34 @@ Python takes most of the worries away from you and when you add to very big numb
 
 ## Real numbers
 
+- [Floating Point Numbers - Computerphile](https://www.youtube.com/watch?v=PZRI1IfStY0)
+
 # Complexity
 
 # Algorithms
+## Sorting algorithms
+- Bubble sort and merge sort [Getting Sorted - Computerphile](https://www.youtube.com/watch?v=kgBjXUE_Nwc)
+- [Quick Sort - Computerphile](https://www.youtube.com/watch?v=XE4VP_8Y0BU)
 
-## Sorting
-## Searching
+## Searching in a sorted list
+
+```
+Search for 13 and 9
+In: [0, 3, 5, 7, 8, 10, 13, 17]
+                  8
+                /    \
+              5       13
+            /   \    /   \
+          3      7  10    17
+          |
+          0
+```
+
+The obvious solution is to go through each element in the list and check if it is the element we are looking for it. This is going to take $n = length(Inpu)$ number of operations in the average case. Another solution is to realize that a sorted list is a tree (with the root being `length(Input)/2`) and we can search a tree with `log(n)` operations.
 
 # Data structures
 ## Linked Lists
 ## Array Lists
-## Accessing Lists
 
 # Cache and memory layout
 
@@ -104,4 +123,6 @@ The homework is due on *October 15 2015* at *13:00pm* (eg. noon). Hand in your h
 1. Implement a function that computes `xor`, while only using `and`, `or` and `not`.
 2. What happens when you sort characters. What decides their order?
 3. Write a program that takes 16 bit positive numbers (as list of boolean values) and converts them to decimal.
-4. What is overflow and how does it happen?
+4. Implement bubble sort.
+5. Implement merge sort.
+6. Why is merge sort more efficient for large `n`?
