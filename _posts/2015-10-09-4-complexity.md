@@ -126,3 +126,90 @@ The homework is due on *October 15 2015* at *13:00pm* (eg. noon). Hand in your h
 4. Implement bubble sort.
 5. Implement merge sort.
 6. Why is merge sort more efficient for large `n`?
+
+- Describe the following code using big-O notation, and justify your answer. Hint: if you are lost, profile this code.
+
+  ```
+  # http://code.activestate.com/recipes/579093-converting-numeric-strings-to-integers/?in=lang-python
+  def str_to_int(s):
+      ctr = i = 0
+      for c in reversed(s):
+          i += (ord(c) - 48) * (10 ** ctr)
+          ctr += 1
+      return i
+
+  print
+  for s in ('0', '1', '2', '3', '12', '123', '234', '456', '567'):
+      i = str_to_int(s)
+      print "s = {}, i = {} |".format(s, i),
+
+  print
+  print
+
+  for i in range(50):
+      s = str(i)
+      j = str_to_int(s)
+      print "s = {}, j = {} |".format(s, j),
+  ```
+
+  To run this example you may need to install ```pip install bipartite_recipe```
+  ```
+  # http://code.activestate.com/recipes/579088-edge-coloring-of-a-bipartite-graph/?in=lang-python
+  from bipartite_recipe import bipartite_match
+  def max_degree(graph):
+  	max_degree_u=max(len(v) for v in graph.values() )
+  	count={}
+  	for vlist in graph.values():
+  		for v in vlist:
+  			try:
+  				count[v]+=1
+  			except KeyError:
+  				count[v]=1
+  	max_degree_v=max(count.values())
+  	return max(max_degree_v,max_degree_u)
+  def best_match(graph):
+  	b_m=bipartiteMatch(graph)[0]
+  	return dict((value,key) for (key,value) in b_m.items())
+  def edge_coloring(graph):
+  	g=graph.copy()
+  	number_colors=max_degree(g)
+  	for color in range(number_colors):
+  		print 'NEXT COLOR'
+  		bm=best_match(g)
+  		print bm
+  		for k in g.copy():
+  			try:
+  				g[k].remove(bm[k])
+  			except KeyError:
+  				pass
+
+  graph={ 'p1':['c1','c3'], 'p2':['c1','c2'], 'p3':['c2','c3'], 'p4':['c2'] }
+  edge_coloring(graph)
+  ```
+
+  ```
+  # http://code.activestate.com/recipes/578959-draw-a-diamond-with-asterisks-using-recursion/?in=lang-python
+  def triangles(n):
+      if not n & 1:
+          raise ValueError('n must be odd')
+      print_diamond(0, n, n >> 1)
+
+  def print_diamond(start, stop, midpoint):
+      if start < stop:
+          if start <= midpoint:
+              print('  ' * (midpoint - start) + '* ' * ((start << 1) + 1))
+          else:
+              print('  ' * (start - midpoint) + '* ' * ((stop - start << 1) - 1))
+          print_diamond(start + 1, stop, midpoint)
+  ```        
+
+- Consider the following code in Python:
+
+  ```
+  a = {'foo': 'bar'}
+  b = a
+
+  b['new'] = 'key']
+  print(a)
+  ```
+Is this behavior what you expected? Why does Python do this? What would you do if you wanted to change just _b_ and not _a_?
