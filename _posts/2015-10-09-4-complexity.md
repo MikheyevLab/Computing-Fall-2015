@@ -18,7 +18,7 @@ One of the most fundamental things you can do with two bits, is binary logic or 
 #### `and` and `or`
 
 | x | y | `x and y` | `x or y` |
-|:-:|:-:|   :---:   |  :---:   |
+|:-:|:-:|:---------:|:--------:|
 | 0 | 0 |     0     |    0     |
 | 0 | 1 |     0     |    1     |
 | 1 | 0 |     0     |    1     |
@@ -27,7 +27,7 @@ One of the most fundamental things you can do with two bits, is binary logic or 
 #### `not`
 
 |  x  | `not x` |
-|:---:|  :---:  |
+|:---:|:-------:|
 |  0  |    1    |
 |  1  |    0    |
 
@@ -35,7 +35,7 @@ One of the most fundamental things you can do with two bits, is binary logic or 
 There is also the exclusive or (`xor`):
 
 | x | y | `x xor y` |
-| --- | --- | --- |
+|:---:|:---:|:---:|
 |  0  |  0  |  0  |
 |  0  |  1  |  1  |
 |  1  |  0  |  1  |
