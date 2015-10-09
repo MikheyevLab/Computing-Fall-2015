@@ -4,7 +4,7 @@ title: 4. Representations, Complexity and Algorithms
 categories: []
 tags:
   - news
-published: false
+published: true
 ---
 
 # How does a Computer represent things
@@ -79,13 +79,55 @@ For negative numbers the first bit is reserved as the sign so with 8 bits we can
 ### Python and Integers
 Python takes most of the worries away from you and when you add to very big numbers that could overflow it changes the representation from 32 to 64 bit. This allows you not to worry to much about stuff like this but it carries a performance penalty.
 
-- Numpy
+But be careful if you use tools like `numpy`. They are implemented in `C` and you might get overflow behavior.
 
 ## Real numbers
+For representing real numbers computer use floating point (defined in [IEEE754]). Floating point resembles scientific notation, but to the base of 2 instead of 10. One part of stores the significant and the other the exponent. For 64 bits [IEEE754] defines that 52 bits + 1 sign bit are reserved for the significant and 11 bits are reserved for the exponent.
 
+Floating point numbers try to solve the problem of how to represent a set of infinite numbers with only a finite set of representations (bit patterns).
+
+### Noteworthy features
+ - Most numbers can't be exactly represented and errors accumulate.
+
+    ```python
+     print(100*0.1)
+    sum = 0.0
+    for i in range(0,100):
+        sum += 0.1
+
+    print(sum)
+    ```
+
+ - Gaps between numbers grow the bigger the numbers get.
+ - Adding a small number to a big number might have no effect. This is called annihilation.
+ - $(a+b)+c != a+(b+c)$ the order of addition matters!
+
+    ```py
+    a = 1e17
+    b = -1e17
+    c = 1
+
+    (a + b) + c = ???
+    a + (b + c) = ???
+    ```
+ - $a+b>a$ this is no longer true if the distance between $a$ and the next largest floating-point number is bigger than b $⇒ eps(a) > b$.
+ - Instead of testing for equality you should test for approximaly equal.
+
+### Further links
+- [Python tutorial on Floating Point](https://docs.python.org/3.5/tutorial/floatingpoint.html)
+- [What every computer scientist needs to know about floating point numbers](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768)
+- [Floating point guids](http://floating-point-gui.de/formats/fp/)
 - [Floating Point Numbers - Computerphile](https://www.youtube.com/watch?v=PZRI1IfStY0)
+- [IEEE754](http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=4610933)
 
 # Complexity
+The complexity of an algorithm is defined as the number of elementary steps an algorithm takes depending on the number of inputs.
+
+The big *O* notation gives us the asymptotic runtime behavior of a function. As an example the search algorithm for a sorted list most of you implemented in the last homework runs in $O(n)$ steps. Constant cost factors are not of interest. The most optimal algorithm would run in $O(log(n))$. The sorting algorithm most of you implemented takes $O(n^2)$ and the most efficient algorithm takes $O(n*log(n))$.
+
+If you notice that your program runs slowly for large datasets, there are several potential reasons. Either your implementation is inefficient or the algorithm you chose has a bad asymptotic runtime.
+
+- [MIT 16.070](http://web.mit.edu/16.070/www/lecture/big_o.pdf)
 
 # Algorithms
 ## Sorting algorithms
@@ -108,15 +150,39 @@ In: [0, 3, 5, 7, 8, 10, 13, 17]
 
 The obvious solution is to go through each element in the list and check if it is the element we are looking for it. This is going to take $n = length(Inpu)$ number of operations in the average case. Another solution is to realize that a sorted list is a tree (with the root being `length(Input)/2`) and we can search a tree with `log(n)` operations.
 
-# Data structures
-## Linked Lists
-## Array Lists
+# Linked-List
+A linked list is a list that is build from elements that contain a *pointer* to the next element and the value they are storing.
+
+```py
+class LinkedList:
+    next = None
+    def __init__(self, value):
+        self.value = value
+    def append(self, value):
+      if self.next == None:
+          self.next = LinkedList(value)
+      else:
+          self.next.append(value)
+
+```
+
 # Operation costs in Python
+The way we choose to represent data-structure leads to different cost of operations. As an example `append` takes $O(n)$ steps with your `LinkedList`. A more efficient implementation would take $O(1)$.
+
+Take a look at operation costs for common python containers [TimeComplexity](https://wiki.python.org/moin/TimeComplexity) and a [detailed analysis of the python list.](http://www.laurentluce.com/posts/python-list-implementation/)
+
 # Profiling in Python
+Analyzing the performance of a program is called profiling. Profiling will determine hot spots in your code that are costly and those are the places that rewriting them might be beneficial.
+
+- [The Python Profilers](https://docs.python.org/3.5/library/profile.html)
+- [A guide to analyze Python performance](http://www.huyng.com/posts/python-performance-analysis/)
+- [Profiling Python like a boss](https://zapier.com/engineering/profiling-python-boss/)
+- [Timing and Profiling in IPython](http://pynash.org/2013/03/06/timing-and-profiling.html)
 
 # Notes from last weeks homework
 
 - `return` and *function arguments*
+- markdown in Jupyter
 
 # Homework
 
@@ -128,6 +194,11 @@ The homework is due on *October 15 2015* at *13:00pm* (eg. noon). Hand in your h
 4. Implement bubble sort.
 5. Implement merge sort.
 6. Why is merge sort more efficient for large `n`?
+7. Extend the defintion of `LinkedList` given in the lecture to support the operations:
+    - `get(i)` get the value of the list element at position `i`.
+    - `set(i, value)` set the value of the list element at position `i`.
+    - `insert(i, value)` insert a new value at position `i`.
+    - `delete(i)` delete the value at position `i`
 7. Describe the following code using big-O notation, and justify your answer. Hint: if you are lost, profile this code.
 
     ```py
@@ -215,3 +286,4 @@ The homework is due on *October 15 2015* at *13:00pm* (eg. noon). Hand in your h
     print(a)
     ```
 Is this behavior what you expected? Why does Python do this? What would you do if you wanted to change just _b_ and not _a_?
+9. What happens if you call `append` repeatedly on a python list. How could you prevent this behavior?
