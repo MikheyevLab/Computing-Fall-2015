@@ -286,4 +286,4 @@ The homework is due on *October 15 2015* at *13:00pm* (eg. noon). Hand in your h
     print(a)
     ```
 Is this behavior what you expected? Why does Python do this? What would you do if you wanted to change just _b_ and not _a_?
-9. What happens if you call `append` repeatedly on a python list. How could you prevent this behavior?
+9. What cost is associated with calling `append` repeatedly on a python list. Use the resources given in the lecture to study the implementation and its consequences on performance. How could you prevent this behavior in your *own* code, without reimplementing lists?
