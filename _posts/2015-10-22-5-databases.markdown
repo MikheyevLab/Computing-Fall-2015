@@ -1,0 +1,79 @@
+---
+layout: post
+title: "5 Databases"
+date: "2015-10-22"
+published: true
+---
+
+<!-- Sources: Python Programming for Biology -->
+# Databases
+
+## Using databases
+- Generally, the term _database_ refers to _relational databases_. They were introduced in the 1970s and model data structures are relations between tables. There is an associated language called _structured query language_ (SQL) (yay another language!), which can be used to query databases.
+- Pretty much everything you do is stored in a relational database (employee information, bank account data, facebook status).
+
+### Why databases?
+- Databases have to be specifically designed. As a result they make sure that your data are correctly formatted and meet your expectations (such as no redundancy). This property seems like a pain, but is actually extremely useful when dealing with very large data. You won't be able to manually check to make sure that your data are consistent with your expectations, so it is good to have the database do this for you automatically.
+- Also, well-designed databases are optimized for interrelating data and can be queried with great computational efficiency.
+- Finally, because you have to _design_ a database, it forces you to be explicit about the data you want, and how different data streams relate to each other.
+
+### Tables
+- Tables have some named columns and rows.
+- The type of data in each column is usually specified (e.g., text, number, date, etc.). One or more columns can define a _key_.
+  - Each record must have a unique key, which identifies it.
+- E.g., the combination of the columns "First Name" and "Last Name" can be a key in this table
+
+| First Name     | Last Name     | Job
+| :------------- | :------------- |
+| Joe | Smith       | teacher |
+| Alex | Jones | teacher |
+| Jane | Doe | dean |
+
+- You can think of row numbers in an Excel table as keys.
+
+### Schemas
+
+The relational aspect of databases means that there could be mappings between objects in different tables. E.g., keys could be shared between tables containing similar types of information. This can be though of as an exercise in data modeling, and the design of a database can be thought of as a _database schema_. A well-designed schema enforces consistency and eliminates redundancy.
+
+### MySQL vs SQLite
+
+Much of SQL syntax is standardized, but there are several popular implementations of SQL that have some variations. Two of the most popular ones are MySQL and SQLite. MySQL requires a server running to function, and SQLite is a lightweight implementation that requires no server. MySQL has lots of extra features like user management and permissions that we won't mess with. So, go ahead and use SQLite.
+
+There are are wrappers for languages like Python and R that allow you to query databases, and we'll re-visit this in the data visualization part of class.
+
+One handy corollary of this fact is that once you learn SQL, you don't really have to bother learning how to intersect tables in other languages. You can just work on manipulate your data using SQl!
+
+## Today's lecture:
+
+Work through the sqlite section of the this tutorial [this set of exercises](http://www.openbookproject.net/courses/python4fun/sqlschool.html).
+
+## Regular expressions (RegEx)
+
+You can greatly increase the power of your SQL queries using regular expressions. They are a standardized syntax that allow you to match particular text patterns. They take a bit of time to master, but can save you lots of time if you ever have to do text processing. You can find a great tutorial [here](http://regexone.com). E.g. ```SELECT fld FROM tbl WHERE fld REGEXP '\b42\b';``` selects every field where there is a number '42' separated either by white space or punctuation, i.e., as a separate word.
+
+## Viewing SQL tables
+
+There are a number of GUIs for manipulating SQL tables. For instance, there is a [firefox addon for SQLite](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/). Another nice interface is [sqlitestudio](http://sqlitestudio.pl/). For MySQL [Sequel Pro](http://www.sequelpro.com/) is amazing.
+
+## Resources
+Since everything on the web runs on SQL, there are _tons_ of resources. Here are some.
+- [SQLZoo](http://sqlzoo.net/wiki/SQL_Tutorial) Interactive SQL tutorial. It is actually pretty good.
+- [sqlcourse.com](http://www.sqlcourse.com/select.html)
+- [Stanford introduction to databases](https://class.stanford.edu/courses/DB/2014/SelfPaced/about) This is a great course, with excellent lectures on SQL and relational algebra.
+- [sqlfiddle](http://sqlfiddle.com) Interactive web site for playing with SQL
+- [sql-ex](http://www.sql-ex.com). In Soviet Russia databases query you. This site asks for an email, but no confirmation link is needed.
+- [Visual explanation of SQL joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+- [Relational Databases for Biologists Tutorial – ISMB02](http://people.virginia.edu/~wrp/papers/ismb02_sql.pdf) Good introduction to SQL for biology
+- [](http://jura.wi.mit.edu/bio/education/bioinfo2006/db4bio/) Relational Databases For Biologists:
+Efficiently Managing And Manipulating Your Data (2006)
+- [Creating A Quick MySQL Relational Database](http://www.anchor.com.au/hosting/support/CreatingAQuickMySQLRelationalDatabase#head-77ab3b06f9d4e6a3ebfc198c4b2ab1e1083dbd3b) A bit advanced, but very nice.
+- [SQLite Exercises, Practice, Solution](http://www.w3resource.com/sqlite-exercises/)
+- [Learn SQL The Hard Way](http://sql.learncodethehardway.org/book/) Promising, but not yet finished.
+- [Cornell Virtual Workshop](https://cvw.cac.cornell.edu/Databases/default)
+
+## Homework
+1. Complete the Python connection section of this [tutorial ](http://www.openbookproject.net/courses/python4fun/sqlschool.html) and hand in an IPython notebook
+2. Work through the exercises [here](http://www.w3resource.com/sqlite-exercises/), covering SELECT, aggregate functions, subqueries and joins (basically all of them). These exercises have solutions on the web site, so no need to turn them in.
+3. Do [this](https://cvw.cac.cornell.edu/Databases/exercise) exercise and answer the questions below.
+- What is database normalization, and why is it important?
+4. Using the tables from [this exercise](http://www.openbookproject.net/courses/python4fun/sqlschool.html), design a with explicit relationships, defining primary and foreign keys. Draw your schema. [Here](https://www.youtube.com/watch?v=ymb9gsl_x1U) is a good video lecture on the subject, using a similar example.
