@@ -23,9 +23,9 @@ published: true
   - Each record must have a unique key, which identifies it.
 - E.g., the combination of the columns "First Name" and "Last Name" can be a key in this table
 
-| First Name     | Last Name     | Job
-| :------------- | :------------- |
-| Joe | Smith       | teacher |
+| First Name | Last Name | Job |
+| :---------- | :-------- | :---------- |
+| Joe | Smith | teacher |
 | Alex | Jones | teacher |
 | Jane | Doe | dean |
 
@@ -57,6 +57,7 @@ There are a number of GUIs for manipulating SQL tables. For instance, there is a
 
 ## Resources
 Since everything on the web runs on SQL, there are _tons_ of resources. Here are some.
+
 - [SQLZoo](http://sqlzoo.net/wiki/SQL_Tutorial) Interactive SQL tutorial. It is actually pretty good.
 - [sqlcourse.com](http://www.sqlcourse.com/select.html)
 - [Stanford introduction to databases](https://class.stanford.edu/courses/DB/2014/SelfPaced/about) This is a great course, with excellent lectures on SQL and relational algebra.
