@@ -45,4 +45,5 @@ Notebook [here](ggplot2 intro.html).
 - Take two separate plots in made usig ggplot and arrange them in in columns (_not_ using facet_grid). Hint: you will need to use another library.
 - Draw a histogram of points with a fitted normal distribution (this looks better if your data are roughly normally distributed). E.g., [here](http://www.nature.com/ncomms/2015/150806/ncomms8991/images/ncomms8991-f2.jpg)
 - Implement some plots using the ggplot libary in Python
+- Using Titanic survivor data, make a plot to show whether "women and children first" changed the odds of survival. Was economic class a factor?
 - Make a chord diagram in R, using any library and data set
