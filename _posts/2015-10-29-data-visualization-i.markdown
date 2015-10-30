@@ -10,7 +10,11 @@ Data visualization is one of the most important and difficult skills to master f
 
     "Above all else show the data"
 
-    "A large share of ink on a graphic should present data-information, the ink changing as the data change. Data-ink is the non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented"
+    "A large share of ink on a graphic should present
+     data-information, the ink changing as the data change.
+      Data-ink is the non-erasable core of a graphic, the
+       non-redundant ink arranged in response to variation
+        in the numbers represented"
 
     Tufte, 1983, The Visual Display of Quantitative Information
 
