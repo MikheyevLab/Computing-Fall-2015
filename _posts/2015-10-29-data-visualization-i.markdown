@@ -28,7 +28,7 @@ Even something boring can be made to look interesting:
 
 ## Intro to ggplot2
 
-Notebook [here](ggplot2 intro.html).
+Notebook [here](../ggplot2 intro.html).
 
 ## Links
 - [R Cookbook](http://www.cookbook-r.com/Graphs/) Indespensible reference for how to do things with ggplot2
