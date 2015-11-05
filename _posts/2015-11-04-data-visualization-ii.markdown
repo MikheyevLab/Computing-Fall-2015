@@ -21,6 +21,16 @@ One of the things you will realize, is that at this point the plots exist only o
 
 If you have your own hosted web page, you can put them there, of course. You can also put them in the Public folder of Dropbox and share the link to the html file. A better way to host the images is together with your source code using [github pages](https://pages.github.com). You can have github generate and host a web site by going to "Settings: Launch Automatic page generator" on any repository. This allows you to have a web site for every project. This is actually good way to organize and present supplementary data for manuscripts, including interactive figures, which most (almost all?) journals can't handle at this time.
 
+## Inspiration
+- [D3 Gallery](https://github.com/mbostock/d3/wiki/Gallery)
+- [More D3](http://bl.ocks.org/mbostock)
+- [Introduction to ML](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+- Hans Rosling:
+  - [Ted Talk 2006](http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen)
+  - [BBC] (https://www.youtube.com/watch?v=jbkSRLYSojo)
+- [Points of View - Nature Methods](http://clearscience.info/wp/?p=546)
+
+
 ## Homework
 Submit the homework in as a github repository, hosted on gh-pages.
 1. Read [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345/) chapters 1-7, and implement the basic scatter plot
