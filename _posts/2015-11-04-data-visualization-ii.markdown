@@ -33,7 +33,8 @@ If you have your own hosted web page, you can put them there, of course. You can
 
 ## Homework
 Submit the homework in as a github repository, hosted on gh-pages.
+
 1. Read [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345/) chapters 1-7, and implement the basic scatter plot
 - Implement the [force-directed layout](http://chimera.labs.oreilly.com/books/1230000000345/ch11.html#_force_layout).
 - Now modify the layout so that the names of each node appear when you hover over the points.
-- Using any data set of your choice
+- Visualize any data set of your choice, yjink about what interactive elements would benefit the story you are trying to tell.
