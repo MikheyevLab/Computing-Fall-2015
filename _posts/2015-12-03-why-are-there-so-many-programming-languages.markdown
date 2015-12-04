@@ -26,6 +26,7 @@ So there are a lot of languages that have their own specialization. So it's bett
 ### Some are easier to learn
 
 - C++
+
 ```c++
 #include <iostream.h>
 
@@ -36,6 +37,7 @@ int main()
 
 ```
 - Javascript
+
 ```js
 <TITLE>
 Hello World in JavaScript
@@ -45,6 +47,7 @@ Hello World in JavaScript
 </SCRIPT>
 ```
 - Python
+
 ```python
 print("Hello world!")
 ```
@@ -52,7 +55,6 @@ print("Hello world!")
 ### Languages are modified to make them 'better' in some way
 
 - E.g., Python3 made functions more consistent
-
 ```python
 print "Hello, World!"
 ```
