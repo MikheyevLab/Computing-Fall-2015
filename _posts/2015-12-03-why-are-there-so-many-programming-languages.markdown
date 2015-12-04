@@ -34,11 +34,11 @@ int main()
 {
     std::cout << "Hello, world!\n";
 }
-
 ```
+
 - Javascript
 
-```js
+```JavaScript
 <TITLE>
 Hello World in JavaScript
 </TITLE>
@@ -55,11 +55,11 @@ print("Hello world!")
 ### Languages are modified to make them 'better' in some way
 
 - E.g., Python3 made functions more consistent
-```python
+```
 print "Hello, World!"
 ```
 vs.
-```python
+```
 print("Hello, World!")
 ```
 
